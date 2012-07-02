@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC73DFE015A1CEB80054DD1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73DFDF15A1CEB80054DD1D /* UIKit.framework */; };
+		AC73DFE215A1CEB80054DD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73DFE115A1CEB80054DD1D /* Foundation.framework */; };
+		AC73DFE415A1CEB80054DD1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73DFE315A1CEB80054DD1D /* CoreGraphics.framework */; };
+		AC73DFEA15A1CEB80054DD1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC73DFE815A1CEB80054DD1D /* InfoPlist.strings */; };
+		AC73DFEC15A1CEB80054DD1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC73DFEB15A1CEB80054DD1D /* main.m */; };
+		AC73DFF015A1CEB80054DD1D /* ZPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC73DFEF15A1CEB80054DD1D /* ZPAppDelegate.m */; };
+		AC73DFF315A1CEB80054DD1D /* ZPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC73DFF215A1CEB80054DD1D /* ZPViewController.m */; };
+		AC73DFF615A1CEB80054DD1D /* ZPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC73DFF415A1CEB80054DD1D /* ZPViewController.xib */; };
+		AC73E00715A1CEF70054DD1D /* libcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73E00415A1CEDD0054DD1D /* libcore.a */; };
+		AC73E00E15A1CF380054DD1D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73E00D15A1CF380054DD1D /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC73E00315A1CEDD0054DD1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC73DFFC15A1CEDD0054DD1D /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACDDF37A1531BFE400011F06;
+			remoteInfo = core;
+		};
+		AC73E00515A1CEF10054DD1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC73DFFC15A1CEDD0054DD1D /* core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = ACDDF3791531BFE400011F06;
+			remoteInfo = core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC73DFDB15A1CEB80054DD1D /* iWedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC73DFDF15A1CEB80054DD1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AC73DFE115A1CEB80054DD1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC73DFE315A1CEB80054DD1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AC73DFE715A1CEB80054DD1D /* iWedding-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iWedding-Info.plist"; sourceTree = "<group>"; };
+		AC73DFE915A1CEB80054DD1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC73DFEB15A1CEB80054DD1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC73DFED15A1CEB80054DD1D /* iWedding-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iWedding-Prefix.pch"; sourceTree = "<group>"; };
+		AC73DFEE15A1CEB80054DD1D /* ZPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPAppDelegate.h; sourceTree = "<group>"; };
+		AC73DFEF15A1CEB80054DD1D /* ZPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPAppDelegate.m; sourceTree = "<group>"; };
+		AC73DFF115A1CEB80054DD1D /* ZPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPViewController.h; sourceTree = "<group>"; };
+		AC73DFF215A1CEB80054DD1D /* ZPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPViewController.m; sourceTree = "<group>"; };
+		AC73DFF515A1CEB80054DD1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZPViewController.xib; sourceTree = "<group>"; };
+		AC73DFFC15A1CEDD0054DD1D /* core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = core.xcodeproj; path = ../core/core.xcodeproj; sourceTree = "<group>"; };
+		AC73E00D15A1CF380054DD1D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC73DFD815A1CEB70054DD1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC73E00E15A1CF380054DD1D /* CoreData.framework in Frameworks */,
+				AC73E00715A1CEF70054DD1D /* libcore.a in Frameworks */,
+				AC73DFE015A1CEB80054DD1D /* UIKit.framework in Frameworks */,
+				AC73DFE215A1CEB80054DD1D /* Foundation.framework in Frameworks */,
+				AC73DFE415A1CEB80054DD1D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC73DFD015A1CEB70054DD1D = {
+			isa = PBXGroup;
+			children = (
+				AC73DFE515A1CEB80054DD1D /* iWedding */,
+				AC73DFDE15A1CEB80054DD1D /* Frameworks */,
+				AC73DFDC15A1CEB80054DD1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC73DFDC15A1CEB80054DD1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC73DFDB15A1CEB80054DD1D /* iWedding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC73DFDE15A1CEB80054DD1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC73DFFC15A1CEDD0054DD1D /* core.xcodeproj */,
+				AC73DFDF15A1CEB80054DD1D /* UIKit.framework */,
+				AC73DFE115A1CEB80054DD1D /* Foundation.framework */,
+				AC73DFE315A1CEB80054DD1D /* CoreGraphics.framework */,
+				AC73E00D15A1CF380054DD1D /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC73DFE515A1CEB80054DD1D /* iWedding */ = {
+			isa = PBXGroup;
+			children = (
+				AC73DFEE15A1CEB80054DD1D /* ZPAppDelegate.h */,
+				AC73DFEF15A1CEB80054DD1D /* ZPAppDelegate.m */,
+				AC73DFF115A1CEB80054DD1D /* ZPViewController.h */,
+				AC73DFF215A1CEB80054DD1D /* ZPViewController.m */,
+				AC73DFF415A1CEB80054DD1D /* ZPViewController.xib */,
+				AC73DFE615A1CEB80054DD1D /* Supporting Files */,
+			);
+			path = iWedding;
+			sourceTree = "<group>";
+		};
+		AC73DFE615A1CEB80054DD1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC73DFE715A1CEB80054DD1D /* iWedding-Info.plist */,
+				AC73DFE815A1CEB80054DD1D /* InfoPlist.strings */,
+				AC73DFEB15A1CEB80054DD1D /* main.m */,
+				AC73DFED15A1CEB80054DD1D /* iWedding-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC73DFFD15A1CEDD0054DD1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC73E00415A1CEDD0054DD1D /* libcore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC73DFDA15A1CEB70054DD1D /* iWedding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC73DFF915A1CEB80054DD1D /* Build configuration list for PBXNativeTarget "iWedding" */;
+			buildPhases = (
+				AC73DFD715A1CEB70054DD1D /* Sources */,
+				AC73DFD815A1CEB70054DD1D /* Frameworks */,
+				AC73DFD915A1CEB70054DD1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC73E00615A1CEF10054DD1D /* PBXTargetDependency */,
+			);
+			name = iWedding;
+			productName = iWedding;
+			productReference = AC73DFDB15A1CEB80054DD1D /* iWedding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC73DFD215A1CEB70054DD1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZP;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = AC73DFD515A1CEB70054DD1D /* Build configuration list for PBXProject "iWedding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC73DFD015A1CEB70054DD1D;
+			productRefGroup = AC73DFDC15A1CEB80054DD1D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AC73DFFD15A1CEDD0054DD1D /* Products */;
+					ProjectRef = AC73DFFC15A1CEDD0054DD1D /* core.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				AC73DFDA15A1CEB70054DD1D /* iWedding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AC73E00415A1CEDD0054DD1D /* libcore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcore.a;
+			remoteRef = AC73E00315A1CEDD0054DD1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC73DFD915A1CEB70054DD1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC73DFEA15A1CEB80054DD1D /* InfoPlist.strings in Resources */,
+				AC73DFF615A1CEB80054DD1D /* ZPViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC73DFD715A1CEB70054DD1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC73DFEC15A1CEB80054DD1D /* main.m in Sources */,
+				AC73DFF015A1CEB80054DD1D /* ZPAppDelegate.m in Sources */,
+				AC73DFF315A1CEB80054DD1D /* ZPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC73E00615A1CEF10054DD1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = core;
+			targetProxy = AC73E00515A1CEF10054DD1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC73DFE815A1CEB80054DD1D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC73DFE915A1CEB80054DD1D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AC73DFF415A1CEB80054DD1D /* ZPViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC73DFF515A1CEB80054DD1D /* en */,
+			);
+			name = ZPViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC73DFF715A1CEB80054DD1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		AC73DFF815A1CEB80054DD1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC73DFFA15A1CEB80054DD1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iWedding/iWedding-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../core/**";
+				INFOPLIST_FILE = "iWedding/iWedding-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AC73DFFB15A1CEB80054DD1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iWedding/iWedding-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../core/**";
+				INFOPLIST_FILE = "iWedding/iWedding-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC73DFD515A1CEB70054DD1D /* Build configuration list for PBXProject "iWedding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC73DFF715A1CEB80054DD1D /* Debug */,
+				AC73DFF815A1CEB80054DD1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC73DFF915A1CEB80054DD1D /* Build configuration list for PBXNativeTarget "iWedding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC73DFFA15A1CEB80054DD1D /* Debug */,
+				AC73DFFB15A1CEB80054DD1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC73DFD215A1CEB70054DD1D /* Project object */;
+}

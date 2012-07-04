@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#define goc [GlobalObjectsContainer sharedInstance] 
+
 @interface GlobalObjectsContainer : NSObject
+SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(GlobalObjectsContainer);
+
+@property (nonatomic, retain) NSString* skinName;
 
 @end

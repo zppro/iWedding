@@ -9,35 +9,26 @@
 #import "ZPSplasherController.h"
 
 @interface ZPSplasherController ()
-
+@property (nonatomic, retain) UIImageView* backImage;
 @end
 
 @implementation ZPSplasherController
+@synthesize backImage = _backImage;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+- (void)dealloc {
+    [_backImage release]; 
+    [super dealloc];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-	return YES;
-}
+    _backImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
+    [_backImage setImage:MF_PngOfDefaultSkin(@"Common/Splasher.png")];
+    [self.view addSubview:_backImage];
+    [_backImage behindMe];
+} 
+ 
 
 @end

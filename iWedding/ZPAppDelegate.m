@@ -8,26 +8,31 @@
 
 #import "ZPAppDelegate.h"
 
-#import "ZPViewController.h"
+#import "ZPSplasherController.h"
 
 @implementation ZPAppDelegate
 
-@synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize window = _window; 
 
 - (void)dealloc
 {
-    [_window release];
-    [_viewController release];
+    [_window release]; 
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [application setStatusBarHidden:YES];//隐藏状态栏
+    [UIApplication sharedApplication].idleTimerDisabled=YES; //不自动锁屏
+    
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-    self.viewController = [[[ZPViewController alloc] initWithNibName:@"ZPViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    // Override point for customization after application launch.     
+    self.window.backgroundColor = [UIColor whiteColor];
+    ZPSplasherController *splasher = [[[ZPSplasherController alloc] init] autorelease];
+    [_window setRootViewController:[[[UINavigationController alloc] initWithRootViewController:splasher] autorelease]];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

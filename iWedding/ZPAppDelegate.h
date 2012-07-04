@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class ZPViewController;
+ 
 
 @interface ZPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ZPViewController *viewController;
-
+ 
 @end

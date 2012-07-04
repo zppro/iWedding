@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AppBaseController : BaseController
+@property (nonatomic, retain) UIView* containerView;
 
 @end

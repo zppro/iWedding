@@ -13,10 +13,14 @@
 		AC73DFEA15A1CEB80054DD1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC73DFE815A1CEB80054DD1D /* InfoPlist.strings */; };
 		AC73DFEC15A1CEB80054DD1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC73DFEB15A1CEB80054DD1D /* main.m */; };
 		AC73DFF015A1CEB80054DD1D /* ZPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC73DFEF15A1CEB80054DD1D /* ZPAppDelegate.m */; };
-		AC73DFF315A1CEB80054DD1D /* ZPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC73DFF215A1CEB80054DD1D /* ZPViewController.m */; };
-		AC73DFF615A1CEB80054DD1D /* ZPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC73DFF415A1CEB80054DD1D /* ZPViewController.xib */; };
 		AC73E00715A1CEF70054DD1D /* libcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73E00415A1CEDD0054DD1D /* libcore.a */; };
 		AC73E00E15A1CF380054DD1D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73E00D15A1CF380054DD1D /* CoreData.framework */; };
+		ACFBACF615A47BF000B93F7B /* AppBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBACF515A47BF000B93F7B /* AppBaseController.m */; };
+		ACFBAD1515A4810700B93F7B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD1415A4810700B93F7B /* QuartzCore.framework */; };
+		ACFBAD1915A4849B00B93F7B /* AppIcon in Resources */ = {isa = PBXBuildFile; fileRef = ACFBAD1715A4849B00B93F7B /* AppIcon */; };
+		ACFBAD1A15A4849B00B93F7B /* Documents in Resources */ = {isa = PBXBuildFile; fileRef = ACFBAD1815A4849B00B93F7B /* Documents */; };
+		ACFBAD1D15A4853200B93F7B /* GlobalObjectsContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD1C15A4853200B93F7B /* GlobalObjectsContainer.m */; };
+		ACFBAD2615A489F700B93F7B /* ZPSplasherController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD2515A489F700B93F7B /* ZPSplasherController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +51,17 @@
 		AC73DFED15A1CEB80054DD1D /* iWedding-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iWedding-Prefix.pch"; sourceTree = "<group>"; };
 		AC73DFEE15A1CEB80054DD1D /* ZPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPAppDelegate.h; sourceTree = "<group>"; };
 		AC73DFEF15A1CEB80054DD1D /* ZPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPAppDelegate.m; sourceTree = "<group>"; };
-		AC73DFF115A1CEB80054DD1D /* ZPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPViewController.h; sourceTree = "<group>"; };
-		AC73DFF215A1CEB80054DD1D /* ZPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPViewController.m; sourceTree = "<group>"; };
-		AC73DFF515A1CEB80054DD1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZPViewController.xib; sourceTree = "<group>"; };
 		AC73DFFC15A1CEDD0054DD1D /* core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = core.xcodeproj; path = ../core/core.xcodeproj; sourceTree = "<group>"; };
 		AC73E00D15A1CF380054DD1D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ACFBACF415A47BF000B93F7B /* AppBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppBaseController.h; path = AppCore/AppBaseController.h; sourceTree = "<group>"; };
+		ACFBACF515A47BF000B93F7B /* AppBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppBaseController.m; path = AppCore/AppBaseController.m; sourceTree = "<group>"; };
+		ACFBAD1415A4810700B93F7B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ACFBAD1715A4849B00B93F7B /* AppIcon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon; sourceTree = "<group>"; };
+		ACFBAD1815A4849B00B93F7B /* Documents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documents; sourceTree = "<group>"; };
+		ACFBAD1B15A4853200B93F7B /* GlobalObjectsContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalObjectsContainer.h; path = AppCore/GlobalObjectsContainer.h; sourceTree = "<group>"; };
+		ACFBAD1C15A4853200B93F7B /* GlobalObjectsContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalObjectsContainer.m; path = AppCore/GlobalObjectsContainer.m; sourceTree = "<group>"; };
+		ACFBAD2415A489F700B93F7B /* ZPSplasherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSplasherController.h; sourceTree = "<group>"; };
+		ACFBAD2515A489F700B93F7B /* ZPSplasherController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSplasherController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFBAD1515A4810700B93F7B /* QuartzCore.framework in Frameworks */,
 				AC73E00E15A1CF380054DD1D /* CoreData.framework in Frameworks */,
 				AC73E00715A1CEF70054DD1D /* libcore.a in Frameworks */,
 				AC73DFE015A1CEB80054DD1D /* UIKit.framework in Frameworks */,
@@ -95,6 +106,7 @@
 				AC73DFE115A1CEB80054DD1D /* Foundation.framework */,
 				AC73DFE315A1CEB80054DD1D /* CoreGraphics.framework */,
 				AC73E00D15A1CF380054DD1D /* CoreData.framework */,
+				ACFBAD1415A4810700B93F7B /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,11 +114,11 @@
 		AC73DFE515A1CEB80054DD1D /* iWedding */ = {
 			isa = PBXGroup;
 			children = (
+				ACFBACF315A47BAB00B93F7B /* AppCore */,
 				AC73DFEE15A1CEB80054DD1D /* ZPAppDelegate.h */,
 				AC73DFEF15A1CEB80054DD1D /* ZPAppDelegate.m */,
-				AC73DFF115A1CEB80054DD1D /* ZPViewController.h */,
-				AC73DFF215A1CEB80054DD1D /* ZPViewController.m */,
-				AC73DFF415A1CEB80054DD1D /* ZPViewController.xib */,
+				ACFBAD2415A489F700B93F7B /* ZPSplasherController.h */,
+				ACFBAD2515A489F700B93F7B /* ZPSplasherController.m */,
 				AC73DFE615A1CEB80054DD1D /* Supporting Files */,
 			);
 			path = iWedding;
@@ -115,6 +127,8 @@
 		AC73DFE615A1CEB80054DD1D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACFBAD1715A4849B00B93F7B /* AppIcon */,
+				ACFBAD1815A4849B00B93F7B /* Documents */,
 				AC73DFE715A1CEB80054DD1D /* iWedding-Info.plist */,
 				AC73DFE815A1CEB80054DD1D /* InfoPlist.strings */,
 				AC73DFEB15A1CEB80054DD1D /* main.m */,
@@ -129,6 +143,17 @@
 				AC73E00415A1CEDD0054DD1D /* libcore.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ACFBACF315A47BAB00B93F7B /* AppCore */ = {
+			isa = PBXGroup;
+			children = (
+				ACFBACF415A47BF000B93F7B /* AppBaseController.h */,
+				ACFBACF515A47BF000B93F7B /* AppBaseController.m */,
+				ACFBAD1B15A4853200B93F7B /* GlobalObjectsContainer.h */,
+				ACFBAD1C15A4853200B93F7B /* GlobalObjectsContainer.m */,
+			);
+			name = AppCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC73DFEA15A1CEB80054DD1D /* InfoPlist.strings in Resources */,
-				AC73DFF615A1CEB80054DD1D /* ZPViewController.xib in Resources */,
+				ACFBAD1915A4849B00B93F7B /* AppIcon in Resources */,
+				ACFBAD1A15A4849B00B93F7B /* Documents in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +239,9 @@
 			files = (
 				AC73DFEC15A1CEB80054DD1D /* main.m in Sources */,
 				AC73DFF015A1CEB80054DD1D /* ZPAppDelegate.m in Sources */,
-				AC73DFF315A1CEB80054DD1D /* ZPViewController.m in Sources */,
+				ACFBACF615A47BF000B93F7B /* AppBaseController.m in Sources */,
+				ACFBAD1D15A4853200B93F7B /* GlobalObjectsContainer.m in Sources */,
+				ACFBAD2615A489F700B93F7B /* ZPSplasherController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,14 +262,6 @@
 				AC73DFE915A1CEB80054DD1D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AC73DFF415A1CEB80054DD1D /* ZPViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC73DFF515A1CEB80054DD1D /* en */,
-			);
-			name = ZPViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,6 +363,7 @@
 				AC73DFFB15A1CEB80054DD1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

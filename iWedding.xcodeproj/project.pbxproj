@@ -21,6 +21,10 @@
 		ACFBAD1A15A4849B00B93F7B /* Documents in Resources */ = {isa = PBXBuildFile; fileRef = ACFBAD1815A4849B00B93F7B /* Documents */; };
 		ACFBAD1D15A4853200B93F7B /* GlobalObjectsContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD1C15A4853200B93F7B /* GlobalObjectsContainer.m */; };
 		ACFBAD2615A489F700B93F7B /* ZPSplasherController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD2515A489F700B93F7B /* ZPSplasherController.m */; };
+		ACFBAD2915A728E200B93F7B /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD2815A728E100B93F7B /* HomeController.m */; };
+		ACFBAD4915A7348D00B93F7B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD4815A7348D00B93F7B /* CoreFoundation.framework */; };
+		ACFBAD5115A7352100B93F7B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD5015A7352100B93F7B /* SystemConfiguration.framework */; };
+		ACFBAD5315A7352600B93F7B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD5215A7352600B93F7B /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,11 @@
 		ACFBAD1C15A4853200B93F7B /* GlobalObjectsContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalObjectsContainer.m; path = AppCore/GlobalObjectsContainer.m; sourceTree = "<group>"; };
 		ACFBAD2415A489F700B93F7B /* ZPSplasherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSplasherController.h; sourceTree = "<group>"; };
 		ACFBAD2515A489F700B93F7B /* ZPSplasherController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSplasherController.m; sourceTree = "<group>"; };
+		ACFBAD2715A728E100B93F7B /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		ACFBAD2815A728E100B93F7B /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		ACFBAD4815A7348D00B93F7B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		ACFBAD5015A7352100B93F7B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ACFBAD5215A7352600B93F7B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFBAD5315A7352600B93F7B /* MobileCoreServices.framework in Frameworks */,
+				ACFBAD5115A7352100B93F7B /* SystemConfiguration.framework in Frameworks */,
+				ACFBAD4915A7348D00B93F7B /* CoreFoundation.framework in Frameworks */,
 				ACFBAD1515A4810700B93F7B /* QuartzCore.framework in Frameworks */,
 				AC73E00E15A1CF380054DD1D /* CoreData.framework in Frameworks */,
 				AC73E00715A1CEF70054DD1D /* libcore.a in Frameworks */,
@@ -102,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				AC73DFFC15A1CEDD0054DD1D /* core.xcodeproj */,
+				ACFBAD5215A7352600B93F7B /* MobileCoreServices.framework */,
+				ACFBAD5015A7352100B93F7B /* SystemConfiguration.framework */,
+				ACFBAD4815A7348D00B93F7B /* CoreFoundation.framework */,
 				AC73DFDF15A1CEB80054DD1D /* UIKit.framework */,
 				AC73DFE115A1CEB80054DD1D /* Foundation.framework */,
 				AC73DFE315A1CEB80054DD1D /* CoreGraphics.framework */,
@@ -115,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				ACFBACF315A47BAB00B93F7B /* AppCore */,
+				ACFBAD2715A728E100B93F7B /* HomeController.h */,
+				ACFBAD2815A728E100B93F7B /* HomeController.m */,
 				AC73DFEE15A1CEB80054DD1D /* ZPAppDelegate.h */,
 				AC73DFEF15A1CEB80054DD1D /* ZPAppDelegate.m */,
 				ACFBAD2415A489F700B93F7B /* ZPSplasherController.h */,
@@ -242,6 +259,7 @@
 				ACFBACF615A47BF000B93F7B /* AppBaseController.m in Sources */,
 				ACFBAD1D15A4853200B93F7B /* GlobalObjectsContainer.m in Sources */,
 				ACFBAD2615A489F700B93F7B /* ZPSplasherController.m in Sources */,
+				ACFBAD2915A728E200B93F7B /* HomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -47,6 +47,13 @@
     
 	// Do any additional setup after loading the view.
     self.defaultBackgroundImage = MF_PngOfDefaultSkin(@"Tiles/bg.png"); //Default Cell BackgroundImage
+    
+    UIButton *goingUpBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [goingUpBtn setFrame:CGRectMake(12 / 2.0 + 85 / 2.0, 1464 / 2.0, 60 / 2.0, 60 / 2.0)];
+    [goingUpBtn setImage:MF_PngOfDefaultSkin(@"Common/Common_GoingUpBtn.png") forState:UIControlStateNormal];
+    [goingUpBtn addTarget:self action:@selector(doGoingUp:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:goingUpBtn];
+    
     [self setupCatalog];
     [self createTileWall];
 }
@@ -67,6 +74,12 @@
                         [NSDictionary dictionaryWithObjectsAndKeys:@"友",@"title",@"Tiles/gallery.png", @"image",nil], 
                         nil];
     
+}
+
+#pragma mark action
+
+- (void)doGoingUp:(id)sender {   
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark tile

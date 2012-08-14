@@ -12,7 +12,7 @@
 #define cellSplitHeight -5
 
 #import "HomeController.h"
-
+#import "GalleryIndexController.h"
 
 @interface HomeController ()<TileDelegate, TileWallDelegate>
 @property (nonatomic, retain) TileWall* tileWall;
@@ -70,8 +70,8 @@
                         [NSDictionary dictionaryWithObjectsAndKeys:@"公主新娘",@"title",@"Tiles/princess.png", @"image",nil], 
                         [NSDictionary dictionaryWithObjectsAndKeys:@"骑士新郎",@"title",@"Tiles/knight.png", @"image",nil],
                         [NSDictionary dictionaryWithObjectsAndKeys:@"相册",@"title",@"Tiles/gallery.png", @"image",nil], 
-                        [NSDictionary dictionaryWithObjectsAndKeys:@"亲",@"title",@"Tiles/gallery.png", @"image",nil], 
-                        [NSDictionary dictionaryWithObjectsAndKeys:@"友",@"title",@"Tiles/gallery.png", @"image",nil], 
+                        [NSDictionary dictionaryWithObjectsAndKeys:@"亲",@"title",@"Tiles/gallery1.png", @"image",nil], 
+                        [NSDictionary dictionaryWithObjectsAndKeys:@"友",@"title",@"Tiles/gallery2.png", @"image",nil], 
                         nil];
     
 }
@@ -157,7 +157,18 @@
 
 #pragma mark -Tile Delegate
 - (void)tileTapped:(Tile *)tile { 
-    //NSDictionary *catalogInfo = [_catalogList objectAtIndex:((TileBlock *)[tile superview]).indexInTileWall * 12 + tile.indexInTileBlock];
+    NSDictionary *catalogInfo = [_catalogList objectAtIndex:((TileBlock *)[tile superview]).indexInTileWall * 12 + tile.indexInTileBlock];
+    NSString *titleOfCatalog = [catalogInfo objectForKey:@"title"];
+    if([titleOfCatalog  isEqualToString:@"公主新娘"]){
+        
+    }
+    else if([titleOfCatalog  isEqualToString:@"骑士新郎"]){
+        
+    }
+    else if([titleOfCatalog  isEqualToString:@"相册"]){
+        GalleryIndexController *galleryIndexController = [[[GalleryIndexController alloc] init] autorelease];
+        [self.navigationController pushViewController:galleryIndexController animated:YES];
+    } 
 }
 
 #pragma mark -TileWall Delegate

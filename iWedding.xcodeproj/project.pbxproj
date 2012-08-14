@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC08B20115D2458D0090EEDD /* GalleryIndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B20015D2458C0090EEDD /* GalleryIndexController.m */; };
+		AC08B20415DA92140090EEDD /* GalleryScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B20315DA92140090EEDD /* GalleryScrollView.m */; };
 		AC73DFE015A1CEB80054DD1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73DFDF15A1CEB80054DD1D /* UIKit.framework */; };
 		AC73DFE215A1CEB80054DD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73DFE115A1CEB80054DD1D /* Foundation.framework */; };
 		AC73DFE415A1CEB80054DD1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC73DFE315A1CEB80054DD1D /* CoreGraphics.framework */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC08B1FF15D2458C0090EEDD /* GalleryIndexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryIndexController.h; path = Gallery/GalleryIndexController.h; sourceTree = "<group>"; };
+		AC08B20015D2458C0090EEDD /* GalleryIndexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryIndexController.m; path = Gallery/GalleryIndexController.m; sourceTree = "<group>"; };
+		AC08B20215DA92140090EEDD /* GalleryScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryScrollView.h; path = Gallery/GalleryScrollView.h; sourceTree = "<group>"; };
+		AC08B20315DA92140090EEDD /* GalleryScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryScrollView.m; path = Gallery/GalleryScrollView.m; sourceTree = "<group>"; };
 		AC73DFDB15A1CEB80054DD1D /* iWedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC73DFDF15A1CEB80054DD1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AC73DFE115A1CEB80054DD1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +99,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC08B1FE15D245350090EEDD /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				AC08B1FF15D2458C0090EEDD /* GalleryIndexController.h */,
+				AC08B20015D2458C0090EEDD /* GalleryIndexController.m */,
+				AC08B20215DA92140090EEDD /* GalleryScrollView.h */,
+				AC08B20315DA92140090EEDD /* GalleryScrollView.m */,
+			);
+			name = Gallery;
+			sourceTree = "<group>";
+		};
 		AC73DFD015A1CEB70054DD1D = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +146,7 @@
 		AC73DFE515A1CEB80054DD1D /* iWedding */ = {
 			isa = PBXGroup;
 			children = (
+				AC08B1FE15D245350090EEDD /* Gallery */,
 				ACFBACF315A47BAB00B93F7B /* AppCore */,
 				ACFBAD2715A728E100B93F7B /* HomeController.h */,
 				ACFBAD2815A728E100B93F7B /* HomeController.m */,
@@ -260,6 +278,8 @@
 				ACFBAD1D15A4853200B93F7B /* GlobalObjectsContainer.m in Sources */,
 				ACFBAD2615A489F700B93F7B /* ZPSplasherController.m in Sources */,
 				ACFBAD2915A728E200B93F7B /* HomeController.m in Sources */,
+				AC08B20115D2458D0090EEDD /* GalleryIndexController.m in Sources */,
+				AC08B20415DA92140090EEDD /* GalleryScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

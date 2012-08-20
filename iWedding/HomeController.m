@@ -18,16 +18,18 @@
 @property (nonatomic, retain) TileWall* tileWall;
 @property (nonatomic, retain) NSArray* catalogList;
 @property (nonatomic, retain) UIImage* defaultBackgroundImage;
+@property (nonatomic, retain) UIPopoverController   *popver;
 @end
 
 @implementation HomeController
 @synthesize tileWall = _tileWall;
 @synthesize catalogList = _catalogList;
 @synthesize defaultBackgroundImage;
-
+@synthesize popver = _popver;
 - (void)dealloc {
     [_tileWall release];
     [_catalogList release]; 
+    [_popver release];
     self.defaultBackgroundImage = nil;
     [super dealloc];
 }
@@ -47,12 +49,23 @@
     
 	// Do any additional setup after loading the view.
     self.defaultBackgroundImage = MF_PngOfDefaultSkin(@"Tiles/bg.png"); //Default Cell BackgroundImage
+     
+    UIButton *settingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [settingBtn setFrame:CGRectMake(self.view.size.height - 60 / 2.0 - 62 / 2.0, 
+                                    1090 / 2.0 + 60 / 2.0 + 50 / 2.0, 60 / 2.0, 60 / 2.0)];
+    [settingBtn setImage:MF_PngOfDefaultSkin(@"Common/Common_SettingBtn.png") forState:UIControlStateNormal];
+    [settingBtn addTarget:self action:@selector(doSet:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:settingBtn];
     
     UIButton *goingUpBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [goingUpBtn setFrame:CGRectMake(12 / 2.0 + 85 / 2.0, 1464 / 2.0, 60 / 2.0, 60 / 2.0)];
+    [goingUpBtn setFrame:CGRectMake(self.view.size.height - 60 / 2.0 - 62 / 2.0, 
+                                    1090 / 2.0 + 60 / 2.0 + 50 / 2.0 + 60 / 2.0 + 50 / 2.0, 60 / 2.0, 60 / 2.0)];
+    
     [goingUpBtn setImage:MF_PngOfDefaultSkin(@"Common/Common_GoingUpBtn.png") forState:UIControlStateNormal];
     [goingUpBtn addTarget:self action:@selector(doGoingUp:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:goingUpBtn];
+    
+    
     
     [self setupCatalog];
     [self createTileWall];
@@ -198,4 +211,11 @@
 }
 
 
+- (void)doSet:(id)sender {
+          
+    [_popver presentPopoverFromRect:((UIView *)sender).frame 
+                             inView:self.view 
+           permittedArrowDirections:UIPopoverArrowDirectionRight 
+                           animated:YES];
+}
 @end
